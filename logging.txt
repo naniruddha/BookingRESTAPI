@@ -1,0 +1,29 @@
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Etag: W/"1b-AXkqSjuoGK+jzWrje3T2ondnPPc"
+Date: Mon, 21 Nov 2022 13:51:38 GMT
+Via: 1.1 vegur
+
+{
+    "token": "51998a34468561a"
+}
