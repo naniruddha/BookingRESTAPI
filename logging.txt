@@ -1,8 +1,8 @@
 Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/auth?key=qaclick123
+Request URI:	https://restful-booker.herokuapp.com/auth
 Proxy:			<none>
 Request params:	<none>
-Query params:	key=qaclick123
+Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -20,10 +20,193 @@ Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 27
-Etag: W/"1b-AXkqSjuoGK+jzWrje3T2ondnPPc"
-Date: Mon, 21 Nov 2022 13:51:38 GMT
+Etag: W/"1b-5V/Egb9dWIlpdQby2gT6Nk/NWPE"
+Date: Tue, 22 Nov 2022 08:12:57 GMT
 Via: 1.1 vegur
 
 {
-    "token": "51998a34468561a"
+    "token": "320026c61e19197"
+}
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=320026c61e19197
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "nihar",
+    "lastname": "aniruddha",
+    "totalprice": 1248,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Interplanetary Shuttling"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 221
+Etag: W/"dd-HHmgaGrw0BWXxxjj+uwrneD21us"
+Date: Tue, 22 Nov 2022 08:12:59 GMT
+Via: 1.1 vegur
+
+{
+    "bookingid": 32583,
+    "booking": {
+        "firstname": "nihar",
+        "lastname": "aniruddha",
+        "totalprice": 1248,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Interplanetary Shuttling"
+    }
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/32583
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 191
+Etag: W/"bf-MjZtZ9XCbOpHvOfLuxz8usmIMHU"
+Date: Tue, 22 Nov 2022 08:13:00 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "nihar",
+    "lastname": "aniruddha",
+    "totalprice": 1248,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Interplanetary Shuttling"
+}
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/32583
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=320026c61e19197
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: text/plain; charset=utf-8
+Content-Length: 7
+Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date: Tue, 22 Nov 2022 08:13:02 GMT
+Via: 1.1 vegur
+
+Created
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/1248
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=320026c61e19197
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "nihar",
+    "lastname": "aniruddha",
+    "totalprice": 1248,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Interplanetary Shuttling"
+}
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 191
+Etag: W/"bf-MjZtZ9XCbOpHvOfLuxz8usmIMHU"
+Date: Tue, 22 Nov 2022 08:13:03 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "nihar",
+    "lastname": "aniruddha",
+    "totalprice": 1248,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Interplanetary Shuttling"
+}
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/1248
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: keep-alive
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 191
+Etag: W/"bf-MjZtZ9XCbOpHvOfLuxz8usmIMHU"
+Date: Tue, 22 Nov 2022 08:13:04 GMT
+Via: 1.1 vegur
+
+{
+    "firstname": "nihar",
+    "lastname": "aniruddha",
+    "totalprice": 1248,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Interplanetary Shuttling"
 }
